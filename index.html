@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Paul D</h1>
-  <img src="http://lorempixel.com/400/200/sports/" alt="sports">
-  <br>
-  I am Paul. I take programming.
-  I like to eat breakfast and drink coffee.
-  <ul>
-    <li><strong><a href="https://twitter.com/BarackObama">Obama's Twitter</a></strong></li>
-    <li><a href="https://www.instagram.com/kingjames/?hl=en">LBJ Insta</a></li>
 
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Latitude</a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Max Temperature</a>
+              <a class="dropdown-item" href="#">Humidity</a>
+              <a class="dropdown-item" href="#">Cloudiness</a>
+              <a class="dropdown-item" href="#">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Comparison</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+          </li>
+    </ul>
+  </nav>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th colspan="3">Movies I like</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Title</th>
-      <th>Genre</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <th>Ex Machina</th>
-      <th>Science Fiction</th>
-      <th>Super AI is born</th>
-    </tr>
-    <tr>
-      <th>AlphaGo</th>
-      <th>Documentary</th>
-      <th>Super AI is born</th>
-    </tr>
-  </tbody>
-</table>
-  
+  <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+    </div>
 
+    <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+    </div>
+<!--
+    These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
+    <div class="row">
+      <div class="col-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+      <div class="col-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+      <div class="col-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+      <div class="col-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
